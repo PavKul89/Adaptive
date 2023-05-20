@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather&family=Merriweather+Sans&family=Montserrat:wght@400;700;900&family=Poppins:wght@400;700;900&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather&family=Merriweather+Sans&family=Montserrat:wght@400;700;900&family=Poppins:wght@400;700;900&family=Raleway&family=Roboto:wght@400;700;900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('image/banner-final.jpg');
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    height: 40vh;
+    padding: 20px 5%;
+
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.mobile-menu-btn,.mobile-menu-close {
+    fill: white;
+    height: 2rem;
+    width: 2rem;
+}
+
+.logo > img {
+    height: 8rem;
+    color: aqua;
+}
+
+.mobile-navigation {
+    display: block;
+
+}
+
+.mobile-dropdown-menu {
+    color: aqua;
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: -42%;
+    background-color: rgba(37, 54, 150, 0.8);
+    transition: 1s;
+
+}
+
+.mobile-dropdown-menu > ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-dropdown-menu > ul > li {
+    margin-bottom: 1rem;
+}
+
+.description {
+    padding-bottom: 5%;
+    color: aqua;
+    
+}
+
+.description-flex-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.description-deep {
+    margin-top: 5%;
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1rem;
+}
+
+.description-deep-one {
+    margin-top: 5%;
+}
+
+.description-deep-text {
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.description-arrow {
+    fill: aqua;;
+    height: 1.5rem;
+    width: 1.5rem; 
+    rotate: 90deg;
+
+}
+
+
+
+.description-title {
+text-align: center;
+}
+
+.description-btn {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.description-second > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+
+.description-items {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    padding-bottom: 5%;
+}
+
+.footer-flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+
+}
+
+.footer-circle {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: relative;
+    margin-right: 0.2rem;
+}
+
+.description-svg {
+    fill: black;
+    height: 1rem;
+    width: 0.8rem; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.footer-title {
+    color: white;
+}
+
+.footer-nav-flex {
+    display: flex;
+}
+
+.desktop-navigation {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+    body {
+        padding: 10%;
+    }
+
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    header {
+        height: 40vh;
+        padding: 0;
+    }
+
+
+    .logo > img {
+        height: 12rem;
+    }
+
+    .mobile-navigation {
+        display: none;
+    }
+
+    .description-flex-container {
+        flex-direction: row;
+        justify-content: space-between;
+  
+    }
+
+    .description-deep {
+        font-size: 2rem;
+        padding: 0%;
+        text-align: end;
+        padding-left: 15%;
+
+    }
+
+    .description-title {
+        text-align: start;
+    }
+
+    .description-items {
+        justify-content: start;
+    }
+
+    .description-first {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    .description-second {
+        font-size: 2rem;
+
+    }
+
+    .description-second > h2 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .description-deep-one {
+        font-size: 2rem;
+     }
+
+    .description-deep-text {
+        font-size: 1.4rem;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 4%;
+    }
+
+    .description-btn {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+    .desktop-navigation {
+        display: block;
+    }
+
+    .desktop-navigation > ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .desktop-navigation > ul > li {
+        margin-right: 0.5rem;
+    }
+
+    .menu-title-link {
+        text-transform: uppercase;
+        color: aqua;
+    }
+
+    .dropdown-menu {
+        display: none;
+        font-size: 1rem;
+        background-color:  rgba(37, 54, 150, 0.8);
+        position: absolute;
+    }
+
+    .dropdown-menu-second {
+        display: none;
+        font-size: 1rem;
+        background-color:  rgba(37, 54, 150, 0.8);
+        position: absolute;
+    }
+
+    .dropdown-menu > ul {
+        list-style: none;
+        width: 5rem;
+        color: aquamarine;
+
+    }
+
+    .footer-flex-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    
+    }
+
+    .show-dropdown-menu {
+        display: block;
+    }
+  
+}
+
+
